@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# FAQ - Hiodes
 
-## Project info
+Proyecto de Preguntas Frecuentes (FAQ) para Hiodes.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Tecnologías Utilizadas
 
-## How can I edit this code?
+Este proyecto fue generado con herramientas modernas de desarrollo frontend para garantizar velocidad, tipado seguro y una buena experiencia de diseño:
 
-There are several ways of editing your application.
+- **Framework principal:** [React 18](https://react.dev/)
+- **Empaquetador/Servidor local:** [Vite](https://vitejs.dev/) (con `@vitejs/plugin-react-swc` para mayor rapidez)
+- **Lenguaje principal:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+- **Componentes de Interfaz:** [shadcn/ui](https://ui.shadcn.com/) y [Radix UI](https://www.radix-ui.com/)
+- **Enrutamiento:** [React Router v6](https://reactrouter.com/)
+- **Manejo de Formularios y Validaciones:** [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Requisitos Previos
 
-Changes made via Lovable will be committed automatically to this repo.
+Antes de comenzar, asegúrate de tener instalado en tu sistema:
+- **[Node.js](https://nodejs.org/)** (se recomienda la versión 18 o superior).
+- Un manejador de paquetes de Node como **npm**, que viene por defecto al instalar Node.js.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Instalación y Pasos para Clonar el Proyecto
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Sigue estos pasos para obtener una copia funcional del proyecto en tu máquina local:
 
-Follow these steps:
+1. **Clonar el repositorio**  
+   Abre una terminal y ejecuta:
+   ```bash
+   git clone https://github.com/jimenaazocar05/Hiodes_FAQ.git
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Ingresar a la carpeta del proyecto**
+   ```bash
+   cd FAQ
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Instalar dependencias necesarias**  
+   Una vez dentro, instala los paquetes requeridos desde `package.json`:
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. **Levantar el servidor de desarrollo**  
+   Ejecuta el entorno en tu computadora para empezar a ver la página y trabajar en los cambios en tiempo real:
+   ```bash
+   npm run dev
+   ```
+   > **Tip:** Abre [http://localhost:8080](http://localhost:8080) (o el puerto que te indique la consola) en tu navegador para ver la aplicación funcionando.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Estructura Principal del Proyecto
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Una visión rápida de los archivos más críticos:
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- `src/` - Contiene el código fuente del proyecto.
+  - `components/` - Se encuentran las piezas reutilizables de React y la interfaz de usuario.
+    - `ui/` - Componentes atómicos e independientes base pre-configurados de shadcn/ui (botones, tarjetas, etc.).
+  - `pages/` - Contiene las vistas completas de la aplicación según la ruta a la que se ingrese.
+  - `data/`, `hooks/`, `lib/` - Lógica de negocio, estados globales, utilidades abstractas e información de respaldo.
+- `public/` - Útil para albergar los activos y recursos estáticos que el empaquetador servirá directamente como imágenes o `favicon`.
+- `tailwind.config.ts`, `vite.config.ts`, `package.json` - Bases y configuraciones de las diversas herramientas utilizadas detrás del proyecto.
